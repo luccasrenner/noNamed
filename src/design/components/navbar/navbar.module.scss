@@ -1,3 +1,21 @@
-.navbarContainer {
+@import '../../../commons/scss/vars.scss';
 
+.navbarContainer {
+    background-color: $primary-color;
+    padding: 10px 3px;
+    
+    .list {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+
+        li {
+            margin: 0 10px;
+
+            a {
+                color : $white;
+                text-decoration: none;
+            }
+        }
+    }
 }

@@ -20,12 +20,14 @@ class Navbar extends Component {
 
         return (
             <div className={ Styles.navbarContainer } >
-                <ul>
+                <ul className={ Styles.list }>
                     {
                         navlinks.map( item =>  (
-                                <Link to={ item.url } key={item.url}>
-                                    { item.pathName }
-                                </Link>
+                                <li>
+                                    <Link to={ item.url } key={item.url}>
+                                        { item.pathName }
+                                    </Link>
+                                </li>
                             )
                         )
                     }
