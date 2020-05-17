@@ -1,3 +1,6 @@
+// Check the Cypress Methods :
+//https://docs.cypress.io/api/commands/
+
 describe( 'Check that home page works', () => {
     it('navigate to home page', () => {
         cy.visit( 'http://localhost:3000/' );
