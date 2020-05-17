@@ -23,7 +23,7 @@ class Navbar extends Component {
                 <ul className={ Styles.list }>
                     {
                         navlinks.map( item =>  (
-                                <li>
+                                <li className={"go-to-"+item.pathName}>
                                     <Link to={ item.url } key={item.url}>
                                         { item.pathName }
                                     </Link>
